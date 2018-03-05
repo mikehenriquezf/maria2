@@ -1,0 +1,174 @@
+.home {
+	.index-hero {
+		
+		position: relative;
+		 background: url(../i/home-img.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+		margin-top: -60px;
+
+		.hero-headline {
+			position: absolute;
+			padding: 0;
+			bottom: 60px;
+			width: 100%;
+			max-width: initial;
+
+
+			h2 {
+				font-size: 64px;
+				@include robotoMedium;
+				line-height: 60px;
+				color: $white;
+
+				span {
+					position: relative;
+					&:after {
+						content: '';
+						position: absolute;
+						bottom: 10px;
+						left: 0;
+						width: 100%;
+						height: 2px;
+						background: $yellow;
+					}
+				}
+			}
+
+			.headline-bold {
+				@include robotoHeavy;
+			}
+
+			.headline-down {
+				margin-top: 30px;
+				color: $yellow;
+			}
+		}
+		
+	}	
+
+	.home-intro {
+
+		margin-bottom: 60px;
+
+		img {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		p {
+			@include robotoRegular;
+			font-size: 19px;
+			line-height: 32px;
+			color: $black-text;
+			margin: 0;
+		}
+	}
+
+	.home-historias {
+		border-top: 2px solid #333333;
+		padding-top: 62px;
+		padding-bottom: 40px;
+		
+
+		.historias-item {
+			padding-bottom: 40px;
+			border-bottom: 1px solid #E7E7E7;
+
+			.uk-grid>* {
+				padding-left: 0;		
+			}
+
+			img {
+				max-width: 368px;
+				width: 100%;
+				margin-right: 26px;
+			}
+
+			h3 {
+				@include robotoBlack;
+				margin: 0 0 6px 0;
+				font-size: 24px;
+				color: $yellow;
+			}
+
+			h4 {
+				@include robotoHeavy;
+				margin: 0 0 8px 0;
+				font-size: 24px;
+				line-height: 32px;
+				color: $black-text;
+			}
+
+			p {
+				@include ptRegular;
+				font-style: italic;
+				margin: 0;
+				font-size: 18px;
+				line-height: 30px;
+				color: $black-text;
+			}
+		}
+	}
+
+	@media only screen and (max-width: $bk-tablet) {
+
+		.index-hero {
+
+			height: 55vh;
+
+			.hero-headline {
+				padding-left: 20px;
+				bottom: 30px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+
+				.chevron {
+					display: none;
+				}
+
+				h2 {
+					font-size: 30px;
+					line-height: 32px;
+
+					span {
+						&:after {
+							bottom: 2px;
+						}
+					}
+				}
+			}
+		}
+
+		.c-eig-col {
+
+		}
+
+		.home-historias {
+
+			margin-left: 20px;
+			margin-right: 20px;
+
+			.historias-item {
+				padding: 0px 0px 40px 0px;
+
+				.item-holder {
+					.uk-width-auto {
+						width: 100%;
+						img {
+							max-width: initial;
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}		
+	}
+
+
+}

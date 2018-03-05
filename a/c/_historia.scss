@@ -1,0 +1,410 @@
+.historias {
+	.index-hero {
+		background: url(../i/historia-img.jpg) no-repeat center center fixed;
+		position: relative;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+		margin-top: -60px;
+
+		.lower-banner {
+			position: absolute;
+			bottom: 0;
+			height: 85px;
+			width: 100%;
+			background: black;
+
+			h5 {
+				@include robotoMedium;
+				color: #cccccc;
+				font-size: 12px;
+				margin-top: 20px;
+				margin-bottom: 6px;
+			}
+
+			p {
+				color: white;
+				font-size: 20px;	
+				margin: 0;			
+				@include robotoRegular;
+
+				span {
+					@include robotoHeavy;
+				}
+			}
+		}
+	}
+
+	.index-hero-2 {
+		position: relative;
+		display: flex;
+		width: 100vw;
+		height: 100vh;
+		margin-top: -60px;
+
+		.hero-column {
+			width: 50vw;
+			height: 100vh;
+		}
+
+		.column-left {
+			background: $black-text;
+			position: relative;
+
+			.title-holder {
+				position: absolute;
+				max-width: 470px;
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				text-align: center;
+
+				h2 {
+					@include robotoHeavy;
+					font-size: 36px;
+					line-height: 50px;
+					color: $yellow;
+					margin-bottom: 15px;
+				}
+
+				h3 {
+					@include robotoHeavy;
+					font-size: 36px;
+					line-height: 44px;
+					color: white;
+					margin-top: 0px;
+					margin-bottom: 15px;
+				}
+
+				p {
+					@include robotoHeavy;
+					font-size: 20px;
+					line-height: 32px;
+					color: white;
+					margin-left: auto;
+					margin-right: auto;
+					max-width: 410px !important;
+				}
+			}
+		}
+
+		.column-right {
+			background: url(../i/historia-img.jpg) no-repeat center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		.lower-banner {
+			position: absolute;
+			bottom: 0;
+			height: 85px;
+			width: 100%;
+			background: #fafafa;
+			border-bottom: #f1f1f1 1px solid;
+
+			h5 {
+				@include robotoMedium;
+				color: #333333;
+				font-size: 12px;
+				margin-top: 20px;
+				margin-bottom: 6px;
+			}
+
+			p {
+				color: #333333;
+				font-size: 20px;	
+				margin: 0;			
+				@include robotoRegular;
+
+				span {
+					@include robotoHeavy;
+				}
+			}
+		}	
+	}
+
+	.historia {
+		margin-bottom: 60px;
+
+		img {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.historia-headline {
+			h3 {
+				color: $black-text;
+				@include robotoHeavy;
+				font-size: 40px;
+				line-height: 50px;
+				span {
+					font-size: 36px !important;
+					color: $yellow;
+
+				}
+			}
+
+			p {
+				color: $black-text;
+				@include ptRegular;
+				font-size: 21px;
+				line-height: 36px;
+				font-style: italic;
+			}
+		}
+
+		.share-holder {
+			margin-bottom: 30px;
+		}
+
+		.first-content {
+			margin-top: 60px;
+
+			&:before {
+				position: absolute;
+				content: "";
+				height: 1px;
+				width: 100px;
+				background: #D8D8D8;
+				margin-top: -30px;
+				
+			}
+		}
+
+		.historia-content {
+
+			p {
+				@include ptRegular;
+				color: $black-text;
+				font-size: 21px;
+				line-height: 34px;
+			}
+
+			.autor-historia {
+				@include robotoRegular;
+				color: $black-text;
+				font-size: 18px;
+				margin-bottom: 30px;
+
+				.autor-nombre {
+					@include robotoMedium;
+				}
+
+				.autor-marca {
+					font-style: italic;
+				}
+			}
+
+		}
+
+		.historia-multimedia {
+			margin-top: 60px;
+			margin-bottom: 60px;
+
+			img {
+				width: 100%;
+				margin: 0;
+			}
+
+			p {
+				@include ptRegular;
+				font-size: 14px;
+				line-height: 20px;
+				color: $black-text;
+				font-style: italic;
+				margin: 10px 0;
+			}
+		}
+	}
+
+	.home-historias {
+		border-top: 2px solid #333333;
+		/*padding-top: 62px;*/
+		padding-bottom: 40px;
+		background: black;
+
+		h2 {
+			@include robotoMedium;
+			font-size: 12px;
+			color: white;
+			margin-top: 28px;
+			margin-bottom: 60px;
+		}
+		
+
+		.historias-item {
+			padding-bottom: 40px;
+			border-bottom: 1px solid $border-grey;
+
+			.uk-grid>* {
+				padding-left: 0;		
+			}
+
+			img {
+				max-width: 368px;
+				width: 100%;
+				margin-right: 26px;
+			}
+
+			h3 {
+				@include robotoBlack;
+				margin: 0 0 6px 0;
+				font-size: 24px;
+				color: $yellow;
+			}
+
+			h4 {
+				@include robotoHeavy;
+				margin: 0 0 8px 0;
+				font-size: 24px;
+				line-height: 32px;
+				color: white;
+			}
+
+			p {
+				@include ptRegular;
+				font-style: italic;
+				margin: 0;
+				font-size: 18px;
+				line-height: 30px;
+				color: white;
+			}
+		}
+	}
+
+	@media only screen and (max-width: $bk-tablet) {
+		.index-hero {
+
+			height: 70vh;
+			background-size: 610px;
+			background-position: top center;
+
+			.lower-banner {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				padding-left: 20px;
+				/*padding-right: 20px;*/
+
+				p {
+					font-size: 14px;
+					line-height: 18px;
+				}	
+			}
+		}
+
+		.index-hero-2 {
+			display: block;
+			height: 100%;
+
+			.hero-column {
+				width: 100%;
+
+				.title-holder {
+					margin: 15px 30px 20px 20px;
+				}
+			}
+
+			.column-right{
+				max-height: 420px;
+			}
+
+			.column-left {
+
+			}
+
+			.lower-banner {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				padding-left: 20px;
+				/*padding-right: 20px;*/
+
+				p {
+					font-size: 14px;
+					line-height: 18px;
+				}	
+			}
+		}
+
+		.historia {
+			.historia-headline {
+				h3 {
+					span {
+						font-size: 18px !important;
+					}
+
+					font-size: 24px !important;
+					line-height: 28px;
+					font-size: 18px;
+
+
+				}
+
+				p {
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+
+			.historia-content {
+				.autor-historia {
+					font-size: 14px;
+				}
+
+				p {
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+		}
+
+		.home-historias {
+
+			padding-left: 20px;
+			padding-right: 20px;
+
+			.historias-item {
+				padding: 0px 0px 40px 0px;
+
+				img {
+					margin-right: 0;
+				}
+
+				.item-holder {
+					.uk-width-auto {
+						width: 100%;
+						img {
+							max-width: initial;
+							margin-right: 0;
+						}
+					}
+				}
+
+				h3 {
+					font-size: 20px;
+				}
+
+				h4 {
+					font-size: 18px;
+					line-height: 22px;
+				}
+
+				p {
+					font-size: 14px;
+					line-height: 22px;
+				}
+			}
+		}	
+	}
+}

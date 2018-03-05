@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700');
+
+// Colors
+
+$black: #000000 !important;
+$white: #ffffff !important;
+$light-grey: #D8D8D8 !important;
+$yellow: #EDC054 !important;
+$border-grey: #4A4A4A;
+$black-text: #1A1A1A;
+$grey-text: #9B9B9B;
+
+
+// fonts
+@mixin robotoLight {
+	font-family: 'Roboto', sans-serif;	
+	font-weight: 300;
+}
+
+@mixin robotoRegular {
+	font-family: 'Roboto', sans-serif;	
+	font-weight: 400;
+}
+
+
+@mixin robotoMedium {
+	font-family: 'Roboto', sans-serif;	
+	font-weight: 500;
+}
+
+@mixin robotoHeavy {
+	font-family: 'Roboto', sans-serif;	
+	font-weight: 700;
+}
+
+@mixin robotoBlack {
+	font-family: 'Roboto', sans-serif;	
+	font-weight: 900;
+}
+
+@mixin ptRegular {
+	font-family: 'PT Serif',serif;
+	font-weight: 400;
+}
+
+@mixin ptHeavy {
+	font-family: 'PT Serif',serif;
+	font-weight: 700;
+}
+
+@mixin robotoMono {
+	font-family: 'Roboto Mono', monospace;
+}
+
+
+//
+@mixin transition($trans: all, $time: 0.5s, $ease: ease-out) {
+	-webkit-transition: $trans $time $ease;
+	-moz-transition: $trans $time $ease;
+	-ms-transition: $trans $time $ease;
+	-o-transition: $trans $time $ease;
+	transition: $trans $time $ease;
+}
+
+
+@mixin transitionFast {
+	-webkit-transition: all .5s ease-in-out;
+	-mox-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+
+$bk-tablet: '900px';
+
+
+.c-eig-col {
+	max-width: 776px!important;
+	margin: 0px auto 0px auto;
+}
+
+
+
+@media only screen and (max-width: $bk-tablet) {
+	.img-sponsor {
+		width: 140px !important;
+	}		
+}
