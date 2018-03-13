@@ -55,9 +55,21 @@
 
 		margin-bottom: 60px;
 
-		img {
+		.sponsor-by {
+			display: flex;
 			margin-top: 30px;
-			margin-bottom: 30px;
+			p {
+				@include ptRegular;
+				font-style: italic;
+				color: #333333;
+				margin-right: 10px;
+				font-size: 16px;
+			}
+			
+			img {
+				margin-top: 5px;
+				margin-bottom: 30px;
+			}	
 		}
 
 		p {
@@ -78,6 +90,7 @@
 		.historias-item {
 			padding-bottom: 40px;
 			border-bottom: 1px solid #E7E7E7;
+			cursor: pointer;
 
 			.uk-grid>* {
 				padding-left: 0;		
@@ -111,6 +124,24 @@
 				font-size: 18px;
 				line-height: 30px;
 				color: $black-text;
+			}
+
+			.uk-width-auto {
+				.historia-image {
+					position: relative;
+
+
+					&:before {
+						@include transitionFast;
+						content: '';
+						position: absolute;
+						width: 100%;
+						max-width: 368px;
+						height: 100%;
+						background: black;
+						opacity: 0;
+					}
+				}
 			}
 		}
 	}
@@ -147,6 +178,21 @@
 
 		.c-eig-col {
 
+		}
+
+		.home-intro {
+			.sponsor-by {
+				display: flex;
+				margin-top: 30px;
+				p {
+					font-size: 12px;
+				}
+				
+				img {
+					width: 78px;
+					margin-top: 8px;
+				}	
+			}
 		}
 
 		.home-historias {

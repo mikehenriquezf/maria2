@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Title</title>
+        <title>La travesía de sobrevivir mar adentro</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="a/c/uikit.min.css" />
@@ -14,25 +14,30 @@
                 <a href="#">
                     <img src="a/i/end-white.svg">
                 </a>
-                <!-- <p><span>María</span>, un nombre que no vamos a olvidar</p> -->
             </div>
-            <!-- <div class="uk-navbar-center">
-                <p><span>Hurac&aacute;n Mar&iacute;a</span>, 6 historias, 6 meses despu&eacute;s</p>
-            </div> -->
             <div class="uk-navbar-right">
-                <p class="menu-text">Historias</p>
-                <div id="menu-icon-wrapper2" class="menu-icon-wrapper" style="visibility: hidden">
-                    <svg width="1000px" height="1000px">
-                        <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                        <path id="pathE" d="M 300 500 L 700 500"></path>
-                        <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                    </svg>
-                    <button id="menu-icon-trigger2" class="menu-icon-trigger"></button>
+                <div class="menu-hotspot">
+                    <p class="menu-text">Historias</p>
+                    <div class="menu-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </nav>
 
-        <div class="index-hero">
+        <div class="index-hero-2">
+            <div class="hero-column column-left columnleft">
+                <div class="title-holder">
+                    <h2>01.</h2>
+                    <h3>La travesía de sobrevivir mar adentro</h3>
+                    <p>Pescadores de Playa Guayanés, en Yabucoa, por donde entró el huracán María intentan salir a flote en un municipio que todavía padece los estragos causados por el fenómeno de categoría 4</p>
+                </div>
+            </div>
+            <div class="hero-column column-right columnright">
+                <img src="a/i/imagen-historia-3-2.jpg" width="100%">
+            </div>
             <div class="lower-banner">
                 <div class="c-eig-col">
                     <h5>HISTORIA 1 de 6</h5>
@@ -43,10 +48,9 @@
 
         <div class="uk-container historia">
             <div class="c-eig-col">
-                <img class="img-sponsor" src="a/i/logo-sponsor.png"/>
-                <div class="historia-headline">
-                    <h3><span>01. </span>A m&aacute;s de 100 d&iacute;as y Puerto Rico todav&iacute;a est&aacute; en el apag&oacute;n m&aacute;s largo en la historia.</h3>
-                    <p>M&aacute;s del 43 por ciento de los puertorriqueños a&uacute;n no tienen luz, y algunos pueden no tenerlo hasta mayo.</p>    
+                <div class="sponsor-by">
+                    <p>Presentado por</p>
+                    <img class="img-sponsor" src="a/i/sponsor-logo.png"/>
                 </div>
                 <div class="share-holder">
                     <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
@@ -78,6 +82,11 @@
 
                     <p>Mientras, en el barrio Vegas Arriba, los residentes no podían salir de sus hogares por un derrumbe que, según describió a Primera Hora el alcalde Jaime Barlucea, tenía la magnitud del Centro de Convenciones de Puerto Rico. “Detrás de ese derrumbe hay personas mayores de edad (que requieren) tratamiento de cáncer y diálisis”, detalló.</p>
 
+                    <blockquote class="c-eig-col">
+                        <p class="uk-margin-small-bottom">“Nuestro pueblo está devastado”.</p>
+                        <footer>Manuel 'Gabino' Santiago, alcalde.</footer>
+                    </blockquote>
+
                     <p>Solo los árboles jóvenes permanecieron de pie. El resto desfalleció ante las abrumadoras ráfagas de María.</p>
 
                     <p>En las áreas montañosas protegidas por el Departamento de Recursos Naturales y Ambientales, la secretaria de la agencia, Tania Vázquez, reveló en una entrevista con la agencia de noticias EFE que “hubo una pérdida del 98% de los árboles adultos”. En esa zona reposa el rico Bosque Guilarte, de tipo subtropical.</p>
@@ -85,7 +94,9 @@
             </div>
 
             <div class="uk-content historia-multimedia">
-                <img src="a/i/historia-img-2.jpg">
+                <div id='videoPlayerID241775'></div> 
+                <script type='text/javascript'> var videoPlayer = videoPlayer || []; videoPlayer['videoPlayerID241775'] = { videoID: 241775, videoResponsive: true, videoPublisher: 'elnuevodia' }; </script> 
+                <script type='text/javascript' src='//assets.gfrvideo.com/assets/embed/embed-lib.js'></script>
                 <p>Calce Ricardo Arduengo/ENDI</p>
             </div>
 
@@ -110,7 +121,7 @@
                 <div class="uk-width-expand item-holder">
                     <div uk-grid>
                         <div class="uk-width-auto">
-                            <img src="a/i/historia-1-medium.jpg"/>
+                            <div class="historia-image"><img src="a/i/historia-1-medium.jpg"/></div>
                         </div>
                         <div class="uk-width-expand">
                             <h3>01.</h3>
@@ -122,10 +133,10 @@
             </div>
 
             <div class="historias-item c-eig-col" uk-grid>
-                <div class="uk-width-expand">
+                <div class="uk-width-expand item-holder">
                     <div uk-grid>
                         <div class="uk-width-auto">
-                            <img src="a/i/historia-2-medium.jpg"/>
+                            <div class="historia-image"><img src="a/i/historia-2-medium.jpg"/></div>
                         </div>
                         <div class="uk-width-expand">
                             <h3>02.</h3>
@@ -137,10 +148,10 @@
             </div>
 
             <div class="historias-item c-eig-col" uk-grid>
-                <div class="uk-width-expand">
+                <div class="uk-width-expand item-holder">
                     <div uk-grid>
                         <div class="uk-width-auto">
-                            <img src="a/i/historia-3-medium.jpg"/>
+                            <div class="historia-image"><img src="a/i/historia-3-medium.jpg"/></div>
                         </div>
                         <div class="uk-width-expand">
                             <h3>03.</h3>
@@ -152,10 +163,10 @@
             </div>
 
             <div class="historias-item c-eig-col" uk-grid>
-                <div class="uk-width-expand">
+                <div class="uk-width-expand item-holder">
                     <div uk-grid>
                         <div class="uk-width-auto">
-                            <img src="a/i/historia-4-medium.jpg"/>
+                            <div class="historia-image"><img src="a/i/historia-4-medium.jpg"/></div>
                         </div>
                         <div class="uk-width-expand">
                             <h3>04.</h3>
@@ -167,10 +178,10 @@
             </div>
 
             <div class="historias-item c-eig-col" uk-grid>
-                <div class="uk-width-expand">
+                <div class="uk-width-expand item-holder">
                     <div uk-grid>
                         <div class="uk-width-auto">
-                            <img src="a/i/historia-5-medium.jpg"/>
+                            <div class="historia-image"><img src="a/i/historia-5-medium.jpg"/></div>
                         </div>
                         <div class="uk-width-expand">
                             <h3>05.</h3>
@@ -182,10 +193,10 @@
             </div>
 
             <div class="historias-item c-eig-col" uk-grid>
-                <div class="uk-width-expand">
+                <div class="uk-width-expand item-holder">
                     <div uk-grid>
                         <div class="uk-width-auto">
-                            <img src="a/i/historia-6-medium.jpg"/>
+                            <div class="historia-image"><img src="a/i/historia-6-medium.jpg"/></div>
                         </div>
                         <div class="uk-width-expand">
                             <h3>06.</h3>
@@ -249,12 +260,12 @@
     
     <script src="a/j/CustomEase.min.js"></script>
     <script src="a/j/EasePack.min.js"></script>
-    <script src="a/j/segment.min.js"></script>
     <script src="a/j/ease.min.js"></script>
     
 
-    <script src="a/j/main.min.js"></script>
-    <script src="a/j/hamburger.js"></script>
+    <script src="a/j/main-6-meses.min.js"></script>
+    <!-- <script src="a/j/hamburger.js"></script>
+    <script src="a/j/hamburger.js"></script> -->
 
     
 </html>

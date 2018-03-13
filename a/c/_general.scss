@@ -11,6 +11,15 @@ $border-grey: #4A4A4A;
 $black-text: #1A1A1A;
 $grey-text: #9B9B9B;
 
+// Vars
+$bk-tablet: '765px';
+$bk-smart-large: '450px';
+$bk-smart-medium: '400px';
+$bk-smart-small: '376px';
+$bk-smart-x-small: '320px';
+$bk-smart-x-small-landscape: '500px';
+
+
 
 // fonts
 @mixin robotoLight {
@@ -65,14 +74,46 @@ $grey-text: #9B9B9B;
 
 
 @mixin transitionFast {
-	-webkit-transition: all .5s ease-in-out;
-	-mox-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 
-$bk-tablet: '900px';
+.historias-overlay {
+	&:before {		
+		opacity: .3 !important;
+	}
+}
 
+.historias-overlay-home {
+	&:before {		
+		opacity: .2 !important;
+	}
+}
 
 .c-eig-col {
 	max-width: 776px!important;
@@ -86,3 +127,5 @@ $bk-tablet: '900px';
 		width: 140px !important;
 	}		
 }
+
+
