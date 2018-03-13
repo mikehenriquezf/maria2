@@ -16,14 +16,27 @@ footer {
 
 			a {
 				color: $grey-text;	
-				font-weight: 700 !important;			
+				font-weight: 700 !important;	
+
+				&:hover {
+					text-decoration: underline;
+					color: $grey-text;
+
+				}		
 			}
 
 			p {
 				font-weight: 400 !important;
 
+				
+			}
+
+			.creditos {
+				font-style: italic;
+
 				span {
 					font-weight: 700 !important;		
+					font-style: initial;
 				}
 			}
 		}

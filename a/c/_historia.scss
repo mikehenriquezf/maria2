@@ -341,6 +341,7 @@
 		}
 	}
 
+
 	@media only screen and (max-width: 900px) {
 		.index-hero-2 {
 			.lower-banner {
@@ -354,8 +355,8 @@
 			padding-right: 80px;
 
 			.historia-multimedia {
-				margin-right: -80px;
-				margin-left: -80px;
+				// margin-right: -80px;
+				// margin-left: -80px;
 
 				p {
 					padding-left: 80px;
@@ -570,6 +571,10 @@
 					line-height: 22px;
 				}
 			}
+		}
+
+		footer {
+			padding: 60px 20px 50px 20px
 		}	
 	}
 
