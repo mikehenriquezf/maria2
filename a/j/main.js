@@ -1,7 +1,8 @@
 $(document).ready(function() {
 	$('.historias-item').on({
 		click: function(){
-			console.log('entre');
+			var storyUrl = $(this).attr('data-url');
+			window.location.href = storyUrl;
 		},
 		mouseover: function() {
 

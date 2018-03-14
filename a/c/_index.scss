@@ -213,6 +213,7 @@
 
 			.uk-grid>* {
 				padding-left: 0;		
+				margin-top: 0;
 			}
 
 			img {
@@ -271,7 +272,7 @@
 		}
 	}
 
-	@media only screen and (min-width: 1000px) and (orientation: landscape) {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
 		.hero {
 			height: calc(100vh - 120px);
 		}
@@ -365,11 +366,16 @@
 				.item-holder {
 					.uk-width-auto {
 						width: 100%;
+						// margin-bottom: -20px;
 						img {
 							max-width: initial;
 							margin-right: 0;
 						}
 					}
+				}
+
+				h3 {
+					margin-top: 10px;
 				}
 			}
 		}		
