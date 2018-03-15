@@ -1,0 +1,50 @@
+.creditos {
+	.historia {
+		text-align: center;
+		margin-top: 80px !important;
+
+		h3 {
+			@include robotoRegular;
+			font-style: italic;
+			font-size: 24px !important;
+			line-height: 32px !important;
+			color: $black-text;
+			margin: 0;
+			margin-bottom: -20px;
+		}
+
+		h4 {
+			@include robotoHeavy;
+			color: $black-text;
+			font-size: 19px !important;
+			line-height: 32px !important;
+			margin: 50px 0 0 0;
+		}
+
+		p {
+			@include ptRegular;
+			color: $black-text;
+			font-size: 19px !important;
+			line-height: 32px !important;
+			margin: 0;
+		}
+
+		@media only screen and (max-width: $bk-tablet) {
+			h3 {
+				font-size: 20px !important;
+				line-height: 28px !important;
+			}	
+
+			h4 {
+				font-size: 16px !important;
+				line-height: 28px !important;
+			}
+
+			p {
+				font-size: 16px !important;
+				line-height: 28px !important;
+			}
+		}
+
+	}
+}

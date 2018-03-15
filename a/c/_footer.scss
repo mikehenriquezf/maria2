@@ -8,6 +8,7 @@ footer {
 		margin: 30px 0 0 0;
 		padding-left: 0;
 
+
 		li {
 			list-style: none;
 			color: $grey-text;
@@ -27,6 +28,14 @@ footer {
 
 			p {
 				font-weight: 400 !important;
+				a {
+					font-size: 12px;
+				}
+
+				span {
+					font-style: italic;
+					font-weight: 100;
+				}
 
 				
 			}
@@ -41,5 +50,19 @@ footer {
 			}
 		}
 
+	}
+
+	@media only screen and (max-width: $bk-tablet) {
+		ul {
+			text-align: center;
+		}
+
+		.footer-logos {
+			margin-left: 50%;
+			-webkit-transform: translateX(-56%);
+			-moz-transform: translateX(-56%);
+			transform: translateX(-56%);
+			width: 270px;
+		}
 	}
 }

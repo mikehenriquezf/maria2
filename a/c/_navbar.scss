@@ -9,14 +9,14 @@
 	}
 
 	.uk-navbar-left {
-		padding-left: 30px;
-		width: 52.75vw;
+		padding-left: 45px;
+		width: 50vw;
 		position: relative;
 
 		a {
 			position: absolute;
 			right: 0;
-			margin-right: 25px;
+			// margin-right: 25px;
 
 			img {
 				// height: 28px;
@@ -137,6 +137,14 @@
 		.menu {
 			cursor: pointer;
 			margin-left: 15px;
+		}
+	}
+
+	@media only screen and (max-width: 1000px) {
+		.uk-navbar-left {
+			a {
+				// margin-right: 5px;
+			}
 		}
 	}
 
